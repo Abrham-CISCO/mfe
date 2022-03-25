@@ -3,7 +3,7 @@
 // @babel/plugin-transform-runtime : adds async await and another features.
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-module.exports = {
+module.exports = { 
     module:{
         rules:[
             {
