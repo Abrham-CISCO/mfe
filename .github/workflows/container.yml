@@ -1,5 +1,4 @@
 name: deploy-container-2
-
 on:
   push:
     branches:
@@ -9,7 +8,6 @@ on:
 defaults:
   run:
     working-directory: packages/container
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,4 +22,4 @@ jobs:
         env: 
           AWS_ACCESS_KEY_IS: ${{secrets.AWS_ACCESS_KEY_ID}}
           AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-          AWS_DEFAULT_REGION: ""
+          AWS_DEFAULT_REGION: us-east-1
