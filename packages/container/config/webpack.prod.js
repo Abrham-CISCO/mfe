@@ -6,7 +6,8 @@ const domain = process.env.PRODUCTION_DOMAIN
 const prodConfig = {
     mode:'production', //lets webpack do minification and optimization. but it takes more time.
     output:{
-        filename:'[name].[contenthash].js'//all build files will use this as a template
+        filename:'[name].[contenthash].js',//all build files will use this as a template
+        publicPath:'/container/latest/'
     },
     plugins:[
         new ModuleFedrationPlugin({
