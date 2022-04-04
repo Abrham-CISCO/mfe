@@ -7,7 +7,7 @@ const prodConfig = {
     mode:'production',
     output:{
         filename:'[name].[contenthash].js',//all build files will use this as a template
-        publicPath:'/auth/latest/'
+        publicPath:'/marketing/latest/'
     },
     plugins:[
         new ModuleFederationPlugin({
